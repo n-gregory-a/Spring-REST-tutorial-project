@@ -22,6 +22,21 @@ public class Driver {
             System.out.println("First name = " + student.getFirstName());
             System.out.println("Last name = " + student.getLastName());
 
+            // print out address: street and city
+            Address address = student.getAddress();
+            System.out.println("Street: " + address.getStreet());
+            System.out.println("City: " + address.getCity());
+            System.out.println("State: " + address.getState());
+            System.out.println("Street: " + address.getZip());
+            System.out.println("Country: " + address.getCountry());
+
+            // print out languages
+            for (String language: student.getLanguages()
+                 ) {
+                System.out.println("Lang: " + language);
+            }
+
+
         } catch (Exception exc) {
             exc.printStackTrace();
         }
